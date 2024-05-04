@@ -1,0 +1,102 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 45px;
+    
+    
+  }
+  
+  .container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 212, 214);
+    
+  }
+  
+  .container .calculator {
+    background-color:rgba(16, 191, 214, 0.138) ;
+    width:500px;
+    border-radius: 10px;
+    height: 800px;
+    overflow: hidden;
+    position:fixed;
+    box-shadow: 7px 7px 5px rgba(134, 112, 52, 0.726);;
+  
+    /* padding: 5px; */
+  }
+  
+  .container .calculator .input-field{
+    height: 100px;
+    background-color: rgb(123, 115, 115);
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    font-weight:800;
+  
+  }
+  .container .calculator .numpers{
+    display: grid;
+    grid-template-columns:23% 23% 23% 23%;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 5px;
+  
+  }
+  
+  .container .calculator h1{
+    color: #fff;
+    text-align:right;
+    padding: 10px;
+  font-size: 60px;
+  margin-top: 80px;
+  
+  }
+  
+  .container .calculator .numpers button {
+    height: 90px;
+    width: 100px;
+    background-color: rgb(123, 115, 115);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .container .calculator .numpers button:last-child{
+    width: 220px;
+    background-color: rgb(123, 115, 115) ;
+  }
+  .container .calculator .numpers button:hover{
+    opacity: 90%;
+    transition: all 100ms;
+  }
+  
+  ion-icon {
+    font-size: 50px;
+    font-weight:bold;
+  }
+  
+  .container .calculator .numpers button#clear,
+  .container .calculator .numpers button#back-space,
+  .container .calculator .numpers button#dot,
+  .container .calculator .numpers button#multi{
+    background-color: rgb(123, 115, 115);
+  }
+  
+  .container .calculator .numpers button#slash,
+  .container .calculator .numpers button#minus,
+  .container .calculator .numpers button#plus {
+    background-color: rgb(123, 115, 115);
+    color:  rgb(225, 182, 65) ;
+    
+  }
+  
